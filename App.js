@@ -9,7 +9,7 @@ import AppStack from './src/navigation/AppStack';
 function App() {
   return (
     <NavigationContainer>
-      {/* <AppStack /> */}
+      {/*thevirgogirl_15*/}
       <AuthStack />
     </NavigationContainer>
   );
