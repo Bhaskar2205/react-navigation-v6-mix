@@ -39,7 +39,7 @@ export default function HomeScreen({navigation}) {
             marginBottom: 20,
           }}>
           <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
-            Hello John Doe
+            Hello Bhaskar Mamoria
           </Text>
           <TouchableOpacity onPress={() => navigation.openDrawer()}>
             <ImageBackground
@@ -75,7 +75,7 @@ export default function HomeScreen({navigation}) {
             justifyContent: 'space-between',
           }}>
           <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
-            Upcoming Games
+            Upcoming Events
           </Text>
           <TouchableOpacity onPress={() => {}}>
             <Text style={{color: '#0aada8'}}>See all</Text>
@@ -100,7 +100,7 @@ export default function HomeScreen({navigation}) {
             option2="Paid games"
             onSelectSwitch={onSelectSwitch}
           />
-        </View>
+        </View>  
 
         {gamesTab == 1 &&
           freeGames.map(item => (
@@ -125,9 +125,9 @@ export default function HomeScreen({navigation}) {
               photo={item.poster}
               title={item.title}
               subTitle={item.subtitle}
-              isFree={item.isFree}
+               isFree={item.isFree}
               price={item.price}
-              onPress={() =>
+              onPress={() =>      
                 navigation.navigate('GameDetails', {
                   title: item.title,
                   id: item.id,
